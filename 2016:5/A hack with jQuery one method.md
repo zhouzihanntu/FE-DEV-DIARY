@@ -35,7 +35,3 @@ JavaScript:
 However, contrary to expection, it seemed that the unbind method hadn't remove events bind the input element as I expected. I did try to find out the reason but got nothing, what I expected was the regex only work at the time when `testInput === "number"`, finally I came up with jQuery one() method, after I changed `... $(this).on("blur",function(){ ...` into `... $(this).one("blur",function(){ ...` the problem resolved.
 
 Considering this temporary solution did not reach the essence of problem, I am continuing work on it till make it out.
-
-
-
-g
