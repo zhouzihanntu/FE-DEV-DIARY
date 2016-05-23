@@ -8,7 +8,8 @@
 ##Parameters
 Functions pass implicit parameters during invoking
 ###Arguments
-######Arguments is a gather of parameters, which has a like-array structure but only has certain characters of array.
+######Arguments is a gather of parameters, which has an array-like structure but only has certain characters of array.
+
 * arguments[].length equals to arguments number
 * arguments[n] results (n+1)th parameter
 * traverse arguments[] with `for` circulation 
@@ -33,4 +34,26 @@ Functions pass implicit parameters during invoking
 	new joint();
 	var zhouzi = new joint();
 ###Invoke function with apply()/call()
+	function juggle(){
+		var count = 0;
+		for(var i=0;i<arguments.length;i++){
+			count += arguments[i];
+		}
+		this.result = result;
+	}
 	
+	var joint1 = {};
+	var joint2 = {};
+	
+	juggle.apply(joint1,[1,2,3,4]);
+	juggle.call(joint2,5,6,7,8);
+
+#####apply():
+format:`apply(param1,param2);`
+
+
+param1 refers to the object "this" while params2 is an array which contains all the arguments in the function call.
+#####call():
+format:`call(param1,param2,param3,param4...);`
+
+param1 refers to the object "this" while the others parameters are passed as arguments in the function call.
