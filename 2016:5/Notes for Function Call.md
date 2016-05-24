@@ -30,9 +30,13 @@ Functions pass implicit parameters during invoking
 	o.joint = function(){};
 	o.whatever();
 ###Invoke function as constructor
-	function joint(){ return this;}
+"this" bound to the new object being constructed.
+
+
+	function joint(){ this.a = "zzh";}
 	new joint();
 	var zhouzi = new joint();
+	console.log(zhouzi.zzh);
 ###Invoke function with apply()/call()
 	function juggle(){
 		var count = 0;
