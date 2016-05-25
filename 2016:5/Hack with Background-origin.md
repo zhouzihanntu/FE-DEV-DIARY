@@ -45,3 +45,22 @@ html:
 		<li>joint5</li>
 		<li>joint6</li>
 	</ul>
+
+To simplify the code, apply css gradient property.
+
+	.demo li{
+		position:relative;
+		line-height:40px;
+		padding-left:15px;
+		list-style-type:none;
+		background:liner-gradient(transparent 39px,#ccc 39px,#ccc) no-repeat;
+	}
+	
+	.demo li:not(last-child){
+		background-position:15px;
+	}
+And there's much alternative ways to realize such effect, the one which apply background-origin is as below.
+
+	.demo li:not(last-child){
+		background-origin:content-box;
+	}
