@@ -4,6 +4,7 @@
 * Invoke function as method
 * Invoke function as constructor
 * Invoke function with apply()/call()
+* Invoke function with the bind method
 
 ##Parameters
 Functions pass implicit parameters during invoking
