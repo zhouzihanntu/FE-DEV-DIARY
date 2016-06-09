@@ -62,3 +62,14 @@ param1 refers to the object "this" while params2 is an array which contains all 
 format:`call(param1,param2,param3,param4...);`
 
 param1 refers to the object "this" while the others parameters are passed as arguments in the function call.
+
+###Invoke function with the bind method
+	function f(){
+		return this.a;
+	}
+	
+	var j = f.bind({a:"azerty"});
+	console.log(g());	//azerty
+	
+	var o = {a:37, f:f, g:g};
+	console.log(o.f(), o.g());		//37, azerty
