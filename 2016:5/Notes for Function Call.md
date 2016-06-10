@@ -4,7 +4,8 @@
 * Invoke function as method
 * Invoke function as constructor
 * Invoke function with apply()/call()
-* Invoke function with the bind method
+* Invoke function with bind method
+* Invoke function as DOM event handler
 
 ##Parameters
 Functions pass implicit parameters during invoking
@@ -63,7 +64,7 @@ format:`call(param1,param2,param3,param4...);`
 
 param1 refers to the object "this" while the others parameters are passed as arguments in the function call.
 
-###Invoke function with the bind method
+###Invoke function with bind method
 	function f(){
 		return this.a;
 	}
@@ -73,3 +74,8 @@ param1 refers to the object "this" while the others parameters are passed as arg
 	
 	var o = {a:37, f:f, g:g};
 	console.log(o.f(), o.g());		//37, azerty
+	
+###Invoke function as DOM event handler
+	
+
+"this" is set to the event 
