@@ -76,6 +76,9 @@ param1 refers to the object "this" while the others parameters are passed as arg
 	console.log(o.f(), o.g());		//37, azerty
 	
 ###Invoke function as DOM event handler
-	
+	function bulify(e){
+		console.log(this === e.currentTarget);
+		console.log(this === e.target)
+	}
 
-"this" is set to the event 
+"this" is set to the element the event fired from.
