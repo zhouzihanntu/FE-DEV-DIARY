@@ -1,0 +1,1 @@
+#Use Objext-fit to centralize picture
