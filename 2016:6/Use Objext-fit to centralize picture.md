@@ -29,3 +29,10 @@ before apply object-fix method, make sure the size of element was set.
 	 
 ###object-position
 to control the position of cropping, the usage is the same as background-position.
+
+###Browser compatibility
+* the whole IE series [no support]
+* Android 4.4.4+ [support]
+* Chrome 29+ [support]
+* Safari 7.1+ [support object-fit, no support for object-position]
+* iOS8+ [support object-fit, no support for object-position]
