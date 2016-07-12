@@ -35,4 +35,4 @@ this strange phenomenon did have puzzled me for a while, then I came round and c
 			color: green !important;
 		}
 
-but the most reliable practice is setting style for all common status that may came up.
+but the most reliable practice is setting style for all common status that might came up.
