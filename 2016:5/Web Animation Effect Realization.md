@@ -4,10 +4,10 @@
 ##requestAnimationFrame
 
 	var initialTop = 0;
-	function animat(){
+	function animate(){
 		element.style.top = (initialTop += 1/60);
 	}
-	window.requestAnimationFrame(animat);
+	window.requestAnimationFrame(animate);
 
 
 
