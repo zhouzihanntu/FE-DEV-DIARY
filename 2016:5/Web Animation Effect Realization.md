@@ -3,12 +3,12 @@
 
 ##requestAnimationFrame
 
-`var initialTop = 0;
-function animat(){
-	element.style.top = (initialTop += 1/60);
-}
-window.requestAnimationFrame(animat);
-`
+	var initialTop = 0;
+	function animat(){
+		element.style.top = (initialTop += 1/60);
+	}
+	window.requestAnimationFrame(animat);
+
 
 
 It seems that apply requestAnimationFrame method could improve the project performance to some extent by avoiding high frequency calculating of element property.
