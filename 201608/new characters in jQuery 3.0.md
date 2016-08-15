@@ -5,9 +5,10 @@
 * requestAnimationFrame
 * escapSelector()
 * protection against XSS
-* deleted additional method of Deferred
-* added new argument to $.get() and $.post()
-* support SVG 
+* removed Deferred methods from $.ajax()
+* new signature for $.get() and $.post()
+* support SVG class operation
 * simplified .show(),.hide() usage
-* support floating number in .width(),.height()
+* support non-integer values in .width(),.height()
 * abandoned .bind(), .delegate()
+* formally support promise
