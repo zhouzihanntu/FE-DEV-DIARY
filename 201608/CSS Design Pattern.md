@@ -21,7 +21,7 @@ Scalable and Modular Architecture for CSS
 * Theme
 
 ###Meta CSS
-no-semantic naming convention, these low-readablity classes with their predefined rules will only be applied to elements when necessary, the code can be redundant sometimes but the thought of separating out universal rules could be taken as an example.
+no-semantic naming convention, these low-readablity classes with their predefined rules will only be applied to elements when necessary, the code can be redundant sometimes but the thought of separating out universal rules could be taken as example.
 
     .mt10{
       margin-top: 10px;
